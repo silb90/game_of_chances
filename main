@@ -1,0 +1,25 @@
+import random
+
+money = 100
+
+#Write your game of chance functions here
+
+def heads_or_tails(bet, guess):
+    flip = print(random.choice(1, 2))
+    if guess == 1 and flip == 1:
+        current_balance = money + bet
+        return "Heads. You win! Your current balance is " + current_balance
+    elif guess == 1 and flip == 2:
+        current_balance = money - bet
+        return "Heads. You lose! Your current balance is " + current_balance
+    elif guess == 2 and flip == 2:
+        current_balance = money + bet
+        return "Tales. You win! Your current balance is " + current_balance
+    else:
+        current_balance = money - bet
+        return "Tales. You lose! Your current balance is " + current_balance
+
+
+#Call your game of chance functions here
+
+    heads_or_tales(30, 2)
