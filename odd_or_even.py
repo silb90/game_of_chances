@@ -7,8 +7,11 @@ current_balance = 100
 
 def odd_or_even(bet, guess):
     global current_balance
-    dice1 = random.choice([1, 2, 3, 4, 5, 6])
-    dice2 = random.choice([1, 2, 3, 4, 5, 6])
+    list = [1, 2, 3, 4, 5, 6]
+
+    print("Guess odd or even from the sum of the dices.")
+    dice1 = random.choice(list)
+    dice2 = random.choice(list)
 
     sum = dice1 + dice2
 

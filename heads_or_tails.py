@@ -5,6 +5,8 @@ current_balance = money
 
 def heads_or_tails(bet, guess):
     global current_balance
+
+    print("Heads or tails?")
     flip = random.choice([1, 2])
     print(flip)
     if guess == 1 and flip == 1:
