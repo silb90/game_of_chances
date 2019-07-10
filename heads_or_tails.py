@@ -23,7 +23,3 @@ def heads_or_tails(bet, guess):
         current_balance -= bet
         return "Tails. You lose! Your current balance is " + str(current_balance)
 
-
-result = heads_or_tails(30, 2)
-
-print(result)
